@@ -13,5 +13,6 @@ private:
 	// Window Components 
 	// Add buttons to the window 
 	wxButton* button1 = nullptr;
+	wxButton* button2 = nullptr;
 
 };
