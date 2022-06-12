@@ -10,3 +10,13 @@ App::~App()
 {
 }
 
+bool App::OnInit() // tells the App/Launcher to display the window from the wxApp
+{
+	// create an instance of the window
+	windowFrame = new Calculator();
+	windowFrame->Show();
+	return true;
+}
+
+
+
