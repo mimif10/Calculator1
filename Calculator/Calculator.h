@@ -14,7 +14,7 @@ private:
 	// Add a Text Box a the top to the window 
 	wxTextCtrl* text1 = nullptr;
 	// Add buttons to the window 
-	wxButton* dec = nullptr;
+	wxButton* decbtn = nullptr;
 	wxButton* button1 = nullptr;
 	wxButton* button2 = nullptr;
 
