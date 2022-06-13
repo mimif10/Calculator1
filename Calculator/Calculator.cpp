@@ -10,6 +10,8 @@ Calculator::Calculator() : wxFrame(nullptr, wxID_ANY, "Calculator", wxPoint(200,
 	// 3rd row
 	hexbtn = new wxButton(this, 400, "hex", wxPoint(30, 200), wxSize(50, 50));
 	button4 = new wxButton(this, 4, "4", wxPoint(80, 200), wxSize(50, 50));
+	button5 = new wxButton(this, 5, "5", wxPoint(130, 200), wxSize(50, 50))
+
 	// 4th row
 	decbtn = new wxButton(this, 500, "dec", wxPoint(30, 250), wxSize(50, 50));
 	button1 = new wxButton(this, 1, "1", wxPoint(80, 250), wxSize(50, 50));
