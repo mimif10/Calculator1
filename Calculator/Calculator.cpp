@@ -12,7 +12,7 @@ Calculator::Calculator() : wxFrame(nullptr, wxID_ANY, "Calculator", wxPoint(200,
 	negBtn = new wxButton(this, 1200, "(-)", wxPoint(80, 100), wxSize(50, 50));
 	modBtn = new wxButton(this, 1100, "mod", wxPoint(130, 100), wxSize(50, 50));
 	equalBtn = new wxButton(this, 1000, "=", wxPoint(180, 100), wxSize(50, 50));
-
+	divideBtn = new wxButton(this, 900, "/", wxPoint(230, 100), wxSize(50, 50));
 
 	// 2nd row buttons
 	binBtn = new wxButton(this, 400, "bin", wxPoint(30, 150), wxSize(50, 50));
