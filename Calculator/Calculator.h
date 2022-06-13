@@ -17,6 +17,9 @@ private:
 	// Add buttons to the window 
 	// 3rd row buttons
 	wxButton* hexbtn = nullptr;
+	wxButton* button4 = nullptr;
+	wxButton* button5 = nullptr;
+	wxButton* button6 = nullptr;
 
 	// 4th row buttons
 	wxButton* decbtn = nullptr;
