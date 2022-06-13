@@ -21,7 +21,7 @@ public:
 private:
 	// Window Components 
 	// Add a Text Box a the top to the window 
-	wxTextCtrl* text1 = nullptr;
+	wxTextCtrl* textBox = nullptr;
 
 	// Add buttons to the window 
 	// 1st row buttons

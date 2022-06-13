@@ -26,11 +26,11 @@ wxBEGIN_EVENT_TABLE(Calculator, wxFrame) // takes name of the class for the even
 	EVT_BUTTON(9, OnButtonClicked)
 	wxEND_EVENT_TABLE()
 
-// Window Frame requires some information in order to initialize it (parameters: parent, ID, name, location point, size)
-Calculator::Calculator() : wxFrame(nullptr, wxID_ANY, "Calculator", wxPoint(720, 250), wxSize(320, 315))
+	// Window Frame requires some information in order to initialize it (parameters: parent, ID, name, location point, size)
+	Calculator::Calculator() : wxFrame(nullptr, wxID_ANY, "Calculator", wxPoint(720, 250), wxSize(320, 315))
 {
 	// create a textbox at the top of the window (parameters: parent (wxFrame), ID, title, starting point, starting size
-	text1 = new wxTextCtrl(this, 100, "", wxPoint(30, 26), wxSize(250, 24));
+	textBox = new wxTextCtrl(this, 100, "", wxPoint(30, 26), wxSize(250, 24));
 
 	// create a button from Calculator.h (parameters: parent (wxFrame), ID, title, starting point, starting size
 	// 1st row buttons
@@ -67,8 +67,204 @@ Calculator::~Calculator()
 }
 
 // button Click event - function that handles the button 
-void Calculator::OnButtonClicked(wxCommandEvent& event) 
+void Calculator::OnButtonClicked(wxCommandEvent& event)
 {
+	int id = event.GetId();
 
+	// Use a Switch Statement for each button
+	switch (id)
+	{
+	case 1:
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(button1->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("1");
+		}
+		break;
+	}
+	case 2:
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(button2->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("2");
+		}
+		break;
+	}
+	case 3:
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(button3->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("3"); 
+		}
+		break;
+	}
+	case 4:
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(button4->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("4");
+		}
+		break;
+	}
+	case 5:
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(button5->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("5");
+		}
+		break;
+	}
+	case 6:
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(button6->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("6");
+		}
+		break;
+	}
+	case 7:
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(button7->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("7");
+		}
+		break;
+	}
+	case 8:
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(button8->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("8");
+		}
+		break;
+	}
+	case 9:
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(button9->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("9");
+		}
+		break;
+	}
+	case 200: // clear button
+	{
+		textBox->SetValue("0");
+		break;
+	}
+	case 300: // bin butto
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(binBtn->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("bin ");
+		}
+		break;
+	}
+	case 400: // hex button
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(hexBtn->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("hex ");
+		}
+		break;
+	}
+	case 500: // dec button
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(decBtn->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("dec ");
+		}
+		break;
+	}
+	case 600:
+	{
+		textBox->AppendText(" + ");
+		break;
+	}
+	case 700:
+	{
+		textBox->AppendText(" - ");
+		break;
+	}
+	case 800:
+	{
+		textBox->AppendText(" * ");
+		break;
+	}
+	case 900:
+	{
+		textBox->AppendText(" / ");
+		break;
+	}
+	case 1000: // equal button
+	{
+		textBox->AppendText(" = ");
+		break;
+	}
+	case 1100: // mod button
+	{
+		textBox->AppendText(" mod ");
+		break;
+	}
+	case 1200: // make negative button
+	{
+		if (textBox->GetValue() == "0")
+		{
+			textBox->SetValue(negBtn->GetLabel());
+		}
+		else
+		{
+			textBox->AppendText("-");
+		}
+		break;
+	}
+	}
 }
 
