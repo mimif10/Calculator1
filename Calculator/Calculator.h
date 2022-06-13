@@ -20,7 +20,7 @@ private:
 	wxButton* button7 = nullptr;
 	wxButton* button8 = nullptr;
 	wxButton* button9 = nullptr;
-	wxButton* SubstractBtn = nullptr;
+	wxButton* MutliplyBtn = nullptr;
 
 	// 3rd row buttons
 	wxButton* hexBtn = nullptr;
