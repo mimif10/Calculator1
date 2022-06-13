@@ -15,6 +15,13 @@ private:
 	wxTextCtrl* text1 = nullptr;
 
 	// Add buttons to the window 
+	// 1st row buttons
+	wxButton* clearBtn = nullptr;
+	wxButton* negBtn = nullptr;
+	wxButton* modBtn = nullptr;
+	wxButton* equalBtn = nullptr;
+	wxButton* divideBtn = nullptr;
+
 	// 2nd row buttons
 	wxButton* binBtn = nullptr;
 	wxButton* button7 = nullptr;

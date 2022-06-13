@@ -7,7 +7,9 @@ Calculator::Calculator() : wxFrame(nullptr, wxID_ANY, "Calculator", wxPoint(200,
 	text1 = new wxTextCtrl(this, 100, "", wxPoint(10, 10), wxSize(300, 40));
 
 	// create a button from Calculator.h (parameters: parent (wxFrame), ID, title, starting point, starting size
-	
+	// 1st row buttons
+	clearBtn = new wxButton(this, 400, "clear", wxPoint(30, 100), wxSize(50, 50));
+
 	// 2nd row buttons
 	binBtn = new wxButton(this, 400, "bin", wxPoint(30, 150), wxSize(50, 50));
 	button7 = new wxButton(this, 7, "7", wxPoint(80, 150), wxSize(50, 50));
