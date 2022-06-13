@@ -20,19 +20,19 @@ private:
 	wxButton* button7 = nullptr;
 	wxButton* button8 = nullptr;
 	wxButton* button9 = nullptr;
-	wxButton* mutliplyBtn = nullptr;
+	wxButton* MutliplyBtn = nullptr;
 
 	// 3rd row buttons
 	wxButton* hexBtn = nullptr;
 	wxButton* button4 = nullptr;
 	wxButton* button5 = nullptr;
 	wxButton* button6 = nullptr;
-	wxButton* substractBtn = nullptr;
+	wxButton* SubstractBtn = nullptr;
 
 	// 4th row buttons
 	wxButton* decBtn = nullptr;
 	wxButton* button1 = nullptr;
 	wxButton* button2 = nullptr;
 	wxButton* button3 = nullptr;
-	wxButton* addBtn = nullptr;
+	wxButton* AddBtn = nullptr;
 };
